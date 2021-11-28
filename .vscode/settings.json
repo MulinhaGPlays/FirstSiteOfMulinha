@@ -1,6 +1,7 @@
 {
     "cSpell.words": [
         "Ajuste",
+        "alguns",
         "Filaupe",
         "Imagem",
         "Minutos",
@@ -9,5 +10,8 @@
         "Segundos",
         "Teste",
         "Título"
-    ]
+    ],
+    "liveServer.settings.fullReload": true,
+    "liveServer.settings.useLocalIp": true,
+    "liveServer.settings.useWebExt": true
 }

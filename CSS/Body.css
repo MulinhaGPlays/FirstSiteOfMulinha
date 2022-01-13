@@ -7,8 +7,6 @@
 body
 {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: rgb(0, 40, 126);
+    height: 240vh;
+    background-color: rgb(48, 48, 48);
 }

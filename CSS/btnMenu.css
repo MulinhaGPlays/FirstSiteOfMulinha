@@ -1,11 +1,15 @@
 .bg_menu
 {
-    position: relative;
+    transform: scale(0.8);
+    position: absolute;
     width: 70px;
     height: 70px;
     display: flex;
+    margin-top: 2%;
+    margin-left: 5.3%;
     justify-content: center;
     align-items: center;
+    user-select: none;
 }
 .menu
 {
@@ -22,6 +26,7 @@
     opacity: 35%;
     z-index: 1000;
     transition: 0.25s;
+    transform: scale(0.6);
 }
 .menu:hover
 {
@@ -36,6 +41,7 @@
 .menu.active
 {
     opacity: 1;
+    transform: scale(1);
 }
 .menu span
 {
@@ -86,6 +92,22 @@
     opacity: 0;
     transition: 0.25s;
 }
+.bg_menu label
+{
+    width: 60px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    list-style: none;
+    transition: 0.25s;
+    opacity: 0;
+}
+.bg_menu label:hover
+{
+    cursor: pointer;
+}
 .bg_menu li a 
 {
     width: 50px;
@@ -99,10 +121,62 @@
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 08);
 }
+.bg_menu label input
+{
+    appearance: none;
+    position: relative;
+    z-index: 1;
+}
+.bg_menu label span
+{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background: white;
+    border-radius: 80px;
+    transition: 0.125s;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 08);
+}
+.bg_menu label span s
+{
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(30, 30, 30);
+    transition: 0.25s;
+}
+.bg_menu label span s ion-icon
+{
+    transition: 0.25s;
+    position: absolute;
+}
+.bg_menu label span s ion-icon:nth-child(1)
+{
+    color:  white;
+}
+
+.bg_menu label span s ion-icon:nth-child(2)
+{
+    color:  rgb(30, 30, 30);
+}
 .bg_menu.active li
 {
     opacity: 1;
     transform: translateX(80px) translateY(calc(68px * var(--i)));
+    transition-delay: calc(0.12s * var(--i));
+}
+.bg_menu.active label
+{
+    opacity: 1;
+    transform: translateX(-84px);
     transition-delay: calc(0.12s * var(--i));
 }
 .bg_menu li
@@ -169,4 +243,17 @@
     text-decoration: none;
     z-index: -2;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.bg_menu label input:checked ~ span
+{
+    background-color: rgb(30, 30, 30);
+}
+.bg_menu label input:checked ~ span s
+{
+    left: 32px;
+    background-color: white;
+}
+.bg_menu label input:checked ~ .bg_menu li a
+{
+    background-color: rgb(30, 30, 30);
 }

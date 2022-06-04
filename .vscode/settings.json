@@ -13,5 +13,7 @@
     ],
     "liveServer.settings.fullReload": true,
     "liveServer.settings.useLocalIp": true,
-    "liveServer.settings.useWebExt": true
+    "liveServer.settings.useWebExt": true,
+    "liveServer.settings.useBrowserPreview": true,
+    "liveServer.settings.NoBrowser": true
 }

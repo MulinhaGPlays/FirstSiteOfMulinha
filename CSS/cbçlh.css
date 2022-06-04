@@ -1,0 +1,39 @@
+.bg_menu {
+    display: none;
+}
+
+.cbçlh {
+    background-color: rgb(114, 114, 114);
+    border-radius: 40px 7px;
+    box-shadow: 0 2px 7px rgba(80, 80, 80, 0.705);
+    padding: 10px;
+    width: 100%;
+    height: 21vh;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font: 0px sans-serif;
+}
+.cbçlh-content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.cbçlh-content-logo img {
+    background-color: rgb(88, 88, 88);
+    border-radius: 40px 7px;
+    box-shadow: inset 12px 12px 3px rgb(0, 0, 0),
+     inset 0px 0px 3px rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.cbçlh-content-logo:hover img {
+    cursor: pointer;
+    background-color: rgb(108, 108, 108);
+    box-shadow: inset 12px 12px 3px rgb(0, 0, 0),
+     inset 0px 0px 3px rgb(0, 0, 0);
+}

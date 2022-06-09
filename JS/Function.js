@@ -4,6 +4,7 @@ menu.onclick = function(){
 }
 darkt_check.onclick = function(){
     darkt_check.classList.toggle('checked');
+    
 }
 logo.onclick = function(){
     logo.src = "/Image/Logo/Logo_Site_Click.png"
@@ -11,4 +12,4 @@ logo.onclick = function(){
         window.location.replace("/Pages/Home.html");
         logo.src = "/Image/Logo/Logo_Site.png"
       }, 760);
-}
+} 

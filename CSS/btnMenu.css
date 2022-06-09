@@ -1,6 +1,6 @@
 :root{
- --darkT_bg: rgb(26, 26, 26);
- --whiteT_bg: rgb(255, 255, 255);
+ --darkT: rgb(26, 26, 26);
+ --whiteT: rgb(255, 255, 255), rgba(0, 0, 0, 08);
 }
 .bg_menu
 {
